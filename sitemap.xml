@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://linuz.me/gallery/index.html</loc>
+    
+    <lastmod>2019-08-01T09:17:20.774Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/categories/index.html</loc>
+    
+    <lastmod>2019-08-01T09:13:23.978Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
     
     <lastmod>2019-08-01T07:56:24.710Z</lastmod>
