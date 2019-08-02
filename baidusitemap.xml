@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://linuz.me/2019/07/19/Docker-install/</loc>
+    <lastmod>2019-08-02</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/06/21/Simple-reverse/</loc>
+    <lastmod>2019-08-02</lastmod>
+  </url>  <url>
     <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
+    <lastmod>2019-08-02</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/07/08/Phishing-site/</loc>
     <lastmod>2019-08-02</lastmod>
   </url>
 </urlset>

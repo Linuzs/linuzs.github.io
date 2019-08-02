@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://linuz.me/2019/07/19/Docker-install/</loc>
+    
+    <lastmod>2019-08-02T12:04:50.529Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/06/21/Simple-reverse/</loc>
+    
+    <lastmod>2019-08-02T11:54:28.119Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
+    
+    <lastmod>2019-08-02T11:53:54.451Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/07/08/Phishing-site/</loc>
+    
+    <lastmod>2019-08-02T11:53:34.599Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/gallery/index.html</loc>
+    
+    <lastmod>2019-08-02T11:33:52.527Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://linuz.me/about/index.html</loc>
     
     <lastmod>2019-08-02T05:49:21.820Z</lastmod>
@@ -16,23 +51,9 @@
   </url>
   
   <url>
-    <loc>https://linuz.me/gallery/index.html</loc>
-    
-    <lastmod>2019-08-02T04:45:31.235Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://linuz.me/tags/index.html</loc>
     
     <lastmod>2019-08-02T04:45:08.914Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
-    
-    <lastmod>2019-08-02T04:13:09.789Z</lastmod>
     
   </url>
   
