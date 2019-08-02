@@ -2,30 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://linuz.me/gallery/index.html</loc>
+    <loc>https://linuz.me/about/index.html</loc>
     
-    <lastmod>2019-08-01T09:17:20.774Z</lastmod>
+    <lastmod>2019-08-02T05:49:21.820Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://linuz.me/categories/index.html</loc>
     
-    <lastmod>2019-08-01T09:13:23.978Z</lastmod>
+    <lastmod>2019-08-02T04:45:46.091Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
+    <loc>https://linuz.me/gallery/index.html</loc>
     
-    <lastmod>2019-08-01T07:56:24.710Z</lastmod>
+    <lastmod>2019-08-02T04:45:31.235Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://linuz.me/tags/index.html</loc>
     
-    <lastmod>2019-08-01T02:16:46.246Z</lastmod>
+    <lastmod>2019-08-02T04:45:08.914Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
+    
+    <lastmod>2019-08-02T04:13:09.789Z</lastmod>
     
   </url>
   
