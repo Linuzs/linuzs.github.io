@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="Docker学习笔记(3)"><meta name="keywords" content="Docker"><meta name="author" content="Linuz"><meta name="copyright" content="Linuz"><title>Docker学习笔记(3) | Linuz's Blog</title><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.6.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.6.1"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?23741e1e1b1e0d3c174cf092693a0773";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  }
+} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#容器运维操作"><span class="toc-number">1.</span> <span class="toc-text">容器运维操作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#系统日志相关命令"><span class="toc-number">2.</span> <span class="toc-text">系统日志相关命令</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">Linuz</div><div class="author-info__description text-center">天津某大学信息安全专业在读，突然有一天发现自己距离理想越来越远，所以想写个博客记录自己学习生活，希望能一直坚持下去。</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">8</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">5</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">4</span></a></div><hr><div class="author-info-links"><div class="author-info-links__title text-center">Links</div><a class="author-info-links__name text-center" href="https://www.liqixin.net">启鑫的黑板报</a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://tva3.sinaimg.cn/large/007DFXDhgy1g5lhslc1hrj31hc0u0e81.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Linuz's Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> Search</span></a><a class="site-page" href="/">Home</a><a class="site-page" href="/archives">Archives</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/gallery">Gallery</a><a class="site-page" href="/about">About</a></span></div><div id="post-info"><div id="post-title">Docker学习笔记(3)</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2019-07-23</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/虚拟化/">虚拟化</a><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">953</span><span class="post-meta__separator">|</span><span>阅读时长: 3 分钟</span></div></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p>如何安装Docker?请参考上一篇文章(<a href="https://linuz.me/2019/07/19/Docker-install">传送门</a>)<br>Docker环境信息、容器生命周期管理部分命令参考上一篇文章(<a href="https://linuz.me/2019/07/20/Docker-1">传送门</a>)<br>镜像仓库相关命令、镜像管理相关命令参考上一篇文章(<a href="https://linuz.me/2019/07/21/Docker-2">传送门</a>)<br><strong>如果没什么意外，这应该是基础命令的最后一篇了…</strong><br>总结到了一张脑图上，可以做个参考，<a href="https://edrawcloudpubliccn.oss-cn-shenzhen.aliyuncs.com/viewer/self/985122/share/2019-7-20/1563615986/main.svg" target="_blank" rel="noopener">查看高清版请点我</a><br><img src="https://tva1.sinaimg.cn/large/007DFXDhgy1g56g4mmkc1j30wv0u01kx.jpg" alt></p>
+<h1 id="容器运维操作"><a href="#容器运维操作" class="headerlink" title="容器运维操作"></a>容器运维操作</h1><p>1.docker attach<br>连接正在运行的容器，观察该容器的运行情况，或与容器的主进程进行交互</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker attach [OPTIONS] CONTAINER</span><br><span class="line"></span><br><span class="line">--sig-proxy=false：确保CTRL-D或CTRL-C不会关闭容器</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker attach fcc9bdf1587f</span><br><span class="line">root@fcc9bdf1587f:/#</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva4.sinaimg.cn/large/007DFXDhgy1g58qdridjtj30qy01ft8l.jpg" alt="attach"><br>2.docker inspect<br>查看镜像和容器的详细信息，默认会列出全部信息，可以通过–format参数来指定输出的模板格式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker inspect [OPTIONS] NAME|ID [NAME|ID...]</span><br><span class="line"></span><br><span class="line">-f :指定返回值的模板文件</span><br><span class="line">-s :显示总的文件大小</span><br><span class="line">--type :为指定类型返回JSON</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker inspect ubuntu:latest</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva2.sinaimg.cn/large/007DFXDhgy1g58qk39rytj30wb06s74i.jpg" alt="inspect"><br>3.docker ps<br>常用的选项有-a和-l，-a选项可以查看所有的容器，包括停止的容器；-l选项只查看最新创建的容器，包括不在运行的容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">docker ps [OPTIONS]</span><br><span class="line"></span><br><span class="line">-a :显示所有的容器，包括未运行的</span><br><span class="line">-f :根据条件过滤显示的内容</span><br><span class="line">--format :指定返回值的模板文件</span><br><span class="line">-l :显示最近创建的容器</span><br><span class="line">-n :列出最近创建的n个容器</span><br><span class="line">--no-trunc :不截断输出</span><br><span class="line">-q :静默模式，只显示容器编号</span><br><span class="line">-s :显示总的文件大小</span><br></pre></td></tr></table></figure>
+
+<p>示例 列出所有创建的容器CONTAINER ID：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker ps -a -q</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/007DFXDhgy1g58qqgutf8j30k302qdfr.jpg" alt><br>4.docker rename<br>重命名容器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rename CONTAINER NEW_NAME</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker rename 48432e783e65 ctf-xss</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva4.sinaimg.cn/large/007DFXDhgy1g59hsnthaej317z0680t9.jpg" alt="rename"><br>5.docker stats<br>显示容器资源使用情况统计信息的实时流</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker stats [OPTIONS] [CONTAINER...]</span><br><span class="line"></span><br><span class="line">--all , -a		显示所有容器（默认显示刚刚运行）</span><br><span class="line">--format		使用模板输出</span><br><span class="line">--no-trunc		不要截断输出</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker stats ctf-xss</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva2.sinaimg.cn/large/007DFXDhgy1g59hxtgqr1j317x06iwei.jpg" alt="stats"><br>6.docker top<br>查看容器中运行的进程信息，支持 ps 命令参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker top [OPTIONS] CONTAINER [ps OPTIONS]</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker top ctf-xss</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/007DFXDhgy1g59i0v88dej317b0cpwf8.jpg" alt="top"><br>7.docker cp<br>用于容器与主机之间的数据拷贝</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-</span><br><span class="line">docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH</span><br><span class="line"></span><br><span class="line">-L :保持源目标中的链接</span><br></pre></td></tr></table></figure>
+
+<p>示例1 将本目录下的test.php文件复制到容器的’/var/www/html/‘目录下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker cp test.php 5198ec963e43:/var/www/html/</span><br><span class="line">[root@localhost ~]# docker exec -it 5198ec963e43 /bin/bash</span><br><span class="line">root@5198ec963e43:/# ls /var/www/html</span><br><span class="line">index.phptest.php</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/007DFXDhgy1g59j25vbg5j30s704taac.jpg" alt><br>示例2 将容器内’/var/www/html/index.php’复制到本机/root目录下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker cp 5198ec963e43:/var/www/html/index.php /root/</span><br><span class="line">[root@localhost ~]# ls</span><br><span class="line">index.phptest.php</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva4.sinaimg.cn/large/007DFXDhgy1g59j7gq3frj30r2024jrc.jpg" alt><br>8.docker diff<br>检查容器里文件结构的更改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker diff [OPTIONS] CONTAINER</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker diff 5198ec963e43</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/007DFXDhgy1g59jiqetrej30qf09emxk.jpg" alt="diff"></p>
+<h1 id="系统日志相关命令"><a href="#系统日志相关命令" class="headerlink" title="系统日志相关命令"></a>系统日志相关命令</h1><p>1.docker events<br>从服务器获取实时事件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker events [OPTIONS]</span><br><span class="line"></span><br><span class="line">-f:根据条件过滤事件</span><br><span class="line">--since:从指定的时间戳后显示所有事件</span><br><span class="line">--until:流水时间显示到指定的时间为止</span><br></pre></td></tr></table></figure>
+
+<p>示例 显示docker 2019年7月22日后的所有事件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker events --since=&quot;2019-07-22&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva2.sinaimg.cn/large/007DFXDhgy1g59jsc12vrj317x084t9v.jpg" alt="events"><br>2.docker history<br>查看指定镜像的创建历史</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker history [OPTIONS] IMAGE</span><br><span class="line"></span><br><span class="line">-H :以可读的格式打印镜像大小和日期，默认为true</span><br><span class="line">--no-trunc :显示完整的提交记录</span><br><span class="line">-q :仅列出提交记录ID</span><br></pre></td></tr></table></figure>
+
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker history ctf-sqli:1</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva4.sinaimg.cn/large/007DFXDhgy1g59jwj93a7j314109fmyg.jpg" alt="history"><br>3.docker logs<br>获取容器的日志</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">docker logs [OPTIONS] CONTAINER</span><br><span class="line"></span><br><span class="line">-f : 跟踪日志输出</span><br><span class="line">--since :显示某个开始时间的所有日志</span><br><span class="line">-t : 显示时间戳</span><br><span class="line">--tail :仅列出最新N条容器日志</span><br></pre></td></tr></table></figure>
+
+<p>示例 查看容器nginx的日志输出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# docker logs -f 49c0e49db6f7</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva2.sinaimg.cn/large/007DFXDhgy1g59kaotcl1j317u08wmys.jpg" alt="logs"><br><strong>部分命令参考来自菜鸟教程(<a href="https://www.runoob.com/docker/docker-command-manual.html" target="_blank" rel="noopener">传送门</a>)</strong></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Linuz</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://linuz.me/2019/07/23/Docker-3/">https://linuz.me/2019/07/23/Docker-3/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://linuz.me">Linuz's Blog</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Docker/">Docker</a></div><div class="post-qr-code"><div class="post-qr-code-item"><img class="post-qr-code__img" src="/img/wechat.png"><div class="post-qr-code__desc">敢不敢赏脸一次</div></div></div><div class="social-share"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script><nav id="pagination"><div class="prev-post pull-left"><a href="/2019/07/24/Docker-portainer/"><i class="fa fa-chevron-left">  </i><span>Docker可视化管理工具</span></a></div><div class="next-post pull-right"><a href="/2019/07/21/Docker-2/"><span>Docker学习笔记(2)</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="vcomment"></div><script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'kcuNqj04mCe8HJHF16XoaNNb-gzGzoHsz',
+  appKey:'LfFqNQTPLqBx3ayKrDlfSHyn',
+  placeholder:'(｡･∀･)ﾉﾞ这里是评论区~',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang: 'zh-cn'
+})</script></div></div><footer class="footer-bg" style="background-image: url(https://tva3.sinaimg.cn/large/007DFXDhgy1g5lhslc1hrj31hc0u0e81.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2019 By Linuz</div><div class="framework-info"><span>Driven - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file-o"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.6.1"></script><script src="/js/fancybox.js?version=1.6.1"></script><script src="/js/sidebar.js?version=1.6.1"></script><script src="/js/copy.js?version=1.6.1"></script><script src="/js/fireworks.js?version=1.6.1"></script><script src="/js/transition.js?version=1.6.1"></script><script src="/js/scroll.js?version=1.6.1"></script><script src="/js/head.js?version=1.6.1"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
