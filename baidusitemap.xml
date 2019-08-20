@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://linuz.me/2019/08/04/Webug-docker/</loc>
+    <lastmod>2019-08-20</lastmod>
+  </url>  <url>
     <loc>https://linuz.me/2019/08/12/Redis-windows-getshell/</loc>
     <lastmod>2019-08-12</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/08/05/Webug-docker/</loc>
-    <lastmod>2019-08-05</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/07/24/Docker-portainer/</loc>
     <lastmod>2019-08-03</lastmod>
