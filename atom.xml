@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://linuz.me/"/>
-  <updated>2019-08-12T10:24:20.363Z</updated>
+  <updated>2019-08-26T13:27:09.794Z</updated>
   <id>https://linuz.me/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>重拾初心</title>
+    <link href="https://linuz.me/2019/08/26/Primal-desires/"/>
+    <id>https://linuz.me/2019/08/26/Primal-desires/</id>
+    <published>2019-08-25T16:00:00.000Z</published>
+    <updated>2019-08-26T13:27:09.794Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;strong&gt;暑假即将结束，这个假期说短不短，说长也不长。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;开学也就意味着已经大三了，不得不感叹时间过得可真快~&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;20岁，正是一个努力奋斗的年纪，开学后会好好学习，好好训练。&lt;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://linuz.me/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Redis在Windows环境下Getshell方法小结</title>
