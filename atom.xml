@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://linuz.me/"/>
-  <updated>2019-08-26T13:27:09.794Z</updated>
+  <updated>2019-08-31T09:29:26.956Z</updated>
   <id>https://linuz.me/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从任意文件下载到Getshell</title>
+    <link href="https://linuz.me/2019/08/31/Arbitrary-file-download/"/>
+    <id>https://linuz.me/2019/08/31/Arbitrary-file-download/</id>
+    <published>2019-08-31T09:29:26.960Z</published>
+    <updated>2019-08-31T09:29:26.956Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h1&gt;&lt;p&gt;在某网站下载素材，下载的时候看了下URL，然后发现了惊喜&lt;/p&gt;
+&lt;p&gt;花里胡哨的就不整了，待我口述一下思路&lt;br&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="渗透测试" scheme="https://linuz.me/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>重拾初心</title>
