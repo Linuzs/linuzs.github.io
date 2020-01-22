@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://linuz.me/"/>
-  <updated>2019-08-31T09:29:26.956Z</updated>
+  <updated>2020-01-22T02:39:54.769Z</updated>
   <id>https://linuz.me/</id>
   
   <author>
@@ -17,11 +17,87 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>靶场推荐——LKWA</title>
+    <link href="https://linuz.me/2020/01/22/LKWA/"/>
+    <id>https://linuz.me/2020/01/22/LKWA/</id>
+    <published>2020-01-21T16:00:00.000Z</published>
+    <updated>2020-01-22T02:39:54.769Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;最近在Github上面发现了一个不错的Web漏洞练习靶场——LKWA，它包含了八种Web漏洞：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Blind
+        
+      
+    
+    </summary>
+    
+    
+      <category term="平台搭建" scheme="https://linuz.me/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="漏洞复现" scheme="https://linuz.me/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>靶场推荐——pikachu</title>
+    <link href="https://linuz.me/2020/01/05/pikachu/"/>
+    <id>https://linuz.me/2020/01/05/pikachu/</id>
+    <published>2020-01-04T16:00:00.000Z</published>
+    <updated>2020-01-22T02:31:31.214Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;靶场推荐——pikachu&quot;&gt;&lt;a href=&quot;#靶场推荐——pikachu&quot; class=&quot;headerlink&quot; title=&quot;靶场推荐——pikachu&quot;&gt;&lt;/a&gt;靶场推荐——pikachu&lt;/h1&gt;&lt;h2 id=&quot;项目地址&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="平台搭建" scheme="https://linuz.me/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CanHackMe | CTF平台搭建记录</title>
+    <link href="https://linuz.me/2019/09/12/CanHackMe/"/>
+    <id>https://linuz.me/2019/09/12/CanHackMe/</id>
+    <published>2019-09-11T16:00:00.000Z</published>
+    <updated>2020-01-22T02:40:03.915Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="平台搭建" scheme="https://linuz.me/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>从任意文件下载到Getshell</title>
     <link href="https://linuz.me/2019/08/31/Arbitrary-file-download/"/>
     <id>https://linuz.me/2019/08/31/Arbitrary-file-download/</id>
-    <published>2019-08-31T09:29:26.960Z</published>
-    <updated>2019-08-31T09:29:26.956Z</updated>
+    <published>2019-08-30T16:00:00.000Z</published>
+    <updated>2020-01-22T02:38:39.914Z</updated>
     
     <summary type="html">
     
@@ -71,8 +147,8 @@
     <title>Redis在Windows环境下Getshell方法小结</title>
     <link href="https://linuz.me/2019/08/12/Redis-windows-getshell/"/>
     <id>https://linuz.me/2019/08/12/Redis-windows-getshell/</id>
-    <published>2019-08-12T10:24:20.363Z</published>
-    <updated>2019-08-12T10:24:20.363Z</updated>
+    <published>2019-08-11T16:00:00.000Z</published>
+    <updated>2020-01-22T02:39:29.173Z</updated>
     
     <summary type="html">
     
@@ -87,9 +163,9 @@
     </summary>
     
     
-      <category term="Redis" scheme="https://linuz.me/tags/Redis/"/>
-    
       <category term="漏洞复现" scheme="https://linuz.me/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+      <category term="Redis" scheme="https://linuz.me/tags/Redis/"/>
     
   </entry>
   

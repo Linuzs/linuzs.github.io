@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://linuz.me/2019/09/12/CanHackMe/</loc>
+    <lastmod>2020-01-22</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2020/01/22/LKWA/</loc>
+    <lastmod>2020-01-22</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/08/12/Redis-windows-getshell/</loc>
+    <lastmod>2020-01-22</lastmod>
+  </url>  <url>
     <loc>https://linuz.me/2019/08/31/Arbitrary-file-download/</loc>
-    <lastmod>2019-08-31</lastmod>
+    <lastmod>2020-01-22</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2020/01/05/pikachu/</loc>
+    <lastmod>2020-01-22</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/08/26/Primal-desires/</loc>
     <lastmod>2019-08-26</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/08/04/Webug-docker/</loc>
     <lastmod>2019-08-20</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/08/12/Redis-windows-getshell/</loc>
-    <lastmod>2019-08-12</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/07/24/Docker-portainer/</loc>
     <lastmod>2019-08-03</lastmod>
