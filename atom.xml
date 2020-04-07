@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://linuz.me/"/>
-  <updated>2020-04-05T23:07:50.160Z</updated>
+  <updated>2020-01-22T02:39:54.769Z</updated>
   <id>https://linuz.me/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>记4月5日360众测考核</title>
-    <link href="https://linuz.me/2020/04/05/360-zhongce/"/>
-    <id>https://linuz.me/2020/04/05/360-zhongce/</id>
-    <published>2020-04-04T16:00:00.000Z</published>
-    <updated>2020-04-05T23:07:50.160Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;4月5日360众测考核&quot;&gt;&lt;a href=&quot;#4月5日360众测考核&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="众测" scheme="https://linuz.me/tags/%E4%BC%97%E6%B5%8B/"/>
-    
-      <category term="漏洞复现" scheme="https://linuz.me/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
-    
-  </entry>
   
   <entry>
     <title>靶场推荐——LKWA</title>
@@ -64,9 +38,9 @@
     </summary>
     
     
-      <category term="漏洞复现" scheme="https://linuz.me/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
-    
       <category term="平台搭建" scheme="https://linuz.me/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="漏洞复现" scheme="https://linuz.me/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
     
   </entry>
   
