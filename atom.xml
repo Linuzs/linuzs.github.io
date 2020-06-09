@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://linuz.me/"/>
-  <updated>2020-01-22T02:39:54.769Z</updated>
+  <updated>2020-06-09T22:59:00.171Z</updated>
   <id>https://linuz.me/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CVE-2020-7245（CTFd账户接管漏洞）复现</title>
+    <link href="https://linuz.me/2020/06/10/CVE-2020-7245/"/>
+    <id>https://linuz.me/2020/06/10/CVE-2020-7245/</id>
+    <published>2020-06-09T16:00:00.000Z</published>
+    <updated>2020-06-09T22:59:00.171Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;CVE-2020-7245（CTFd账户接管漏洞）复现&quot;&gt;&lt;a href=&quot;#CVE-2020-7245（CTFd账户接管漏洞）复现&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="漏洞复现" scheme="https://linuz.me/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>靶场推荐——LKWA</title>
@@ -38,9 +62,9 @@
     </summary>
     
     
-      <category term="平台搭建" scheme="https://linuz.me/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/"/>
-    
       <category term="漏洞复现" scheme="https://linuz.me/tags/%E6%BC%8F%E6%B4%9E%E5%A4%8D%E7%8E%B0/"/>
+    
+      <category term="平台搭建" scheme="https://linuz.me/tags/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/"/>
     
   </entry>
   
