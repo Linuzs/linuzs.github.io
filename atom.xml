@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://linuz.me/"/>
-  <updated>2020-06-09T22:59:00.171Z</updated>
+  <updated>2020-06-30T08:30:00.798Z</updated>
   <id>https://linuz.me/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PCCTF热身赛—溯源&amp;社工类题目解析</title>
+    <link href="https://linuz.me/2020/06/30/2020-PCCTF-Writeup/"/>
+    <id>https://linuz.me/2020/06/30/2020-PCCTF-Writeup/</id>
+    <published>2020-06-29T16:00:00.000Z</published>
+    <updated>2020-06-30T08:30:00.798Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;PCCTF热身赛—溯源-amp-社工类题目解析&quot;&gt;&lt;a href=&quot;#PCCTF热身赛—溯源-amp-社工类题目解析&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="CTF" scheme="https://linuz.me/tags/CTF/"/>
+    
+      <category term="社会工程" scheme="https://linuz.me/tags/%E7%A4%BE%E4%BC%9A%E5%B7%A5%E7%A8%8B/"/>
+    
+      <category term="溯源" scheme="https://linuz.me/tags/%E6%BA%AF%E6%BA%90/"/>
+    
+  </entry>
   
   <entry>
     <title>CVE-2020-7245（CTFd账户接管漏洞）复现</title>
