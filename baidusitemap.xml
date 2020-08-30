@@ -1,58 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://linuz.me/2019/08/04/Webug-docker/</loc>
-    <lastmod>2020-08-30</lastmod>
-  </url>  <url>
     <loc>https://linuz.me/2020/08/30/CTF-August-Practice-Web/</loc>
     <lastmod>2020-08-30</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
     <lastmod>2020-08-30</lastmod>
   </url>  <url>
-    <loc>https://linuz.me/2019/08/26/Primal-desires/</loc>
+    <loc>https://linuz.me/2020/06/30/2020-PCCTF-Writeup/</loc>
     <lastmod>2020-08-30</lastmod>
   </url>  <url>
-    <loc>https://linuz.me/2020/06/30/2020-PCCTF-Writeup/</loc>
-    <lastmod>2020-06-30</lastmod>
-  </url>  <url>
     <loc>https://linuz.me/2020/06/10/CVE-2020-7245/</loc>
-    <lastmod>2020-06-09</lastmod>
+    <lastmod>2020-08-30</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/09/12/CanHackMe/</loc>
-    <lastmod>2020-01-22</lastmod>
+    <lastmod>2020-08-30</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2020/01/22/LKWA/</loc>
-    <lastmod>2020-01-22</lastmod>
+    <lastmod>2020-08-30</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/08/12/Redis-windows-getshell/</loc>
-    <lastmod>2020-01-22</lastmod>
+    <lastmod>2020-08-30</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/08/31/Arbitrary-file-download/</loc>
-    <lastmod>2020-01-22</lastmod>
+    <lastmod>2020-08-30</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2020/01/05/pikachu/</loc>
-    <lastmod>2020-01-22</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/07/24/Docker-portainer/</loc>
-    <lastmod>2019-08-03</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/07/21/Docker-2/</loc>
-    <lastmod>2019-08-03</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/07/23/Docker-3/</loc>
-    <lastmod>2019-08-03</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/07/20/Docker-1/</loc>
-    <lastmod>2019-08-02</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/07/19/Docker-install/</loc>
-    <lastmod>2019-08-02</lastmod>
+    <lastmod>2020-08-30</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/06/21/Simple-reverse/</loc>
-    <lastmod>2019-08-02</lastmod>
+    <lastmod>2020-08-30</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/07/08/Phishing-site/</loc>
-    <lastmod>2019-08-02</lastmod>
+    <lastmod>2020-08-30</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/08/04/Webug-docker/</loc>
+    <lastmod>2020-08-30</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/08/26/Primal-desires/</loc>
+    <lastmod>2020-08-30</lastmod>
   </url>
 </urlset>
