@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://linuz.me/2019/08/04/Webug-docker/</loc>
+    <lastmod>2020-08-30</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2020/08/30/CTF-August-Practice-Web/</loc>
+    <lastmod>2020-08-30</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
+    <lastmod>2020-08-30</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/08/26/Primal-desires/</loc>
+    <lastmod>2020-08-30</lastmod>
+  </url>  <url>
     <loc>https://linuz.me/2020/06/30/2020-PCCTF-Writeup/</loc>
     <lastmod>2020-06-30</lastmod>
   </url>  <url>
@@ -22,12 +34,6 @@
     <loc>https://linuz.me/2020/01/05/pikachu/</loc>
     <lastmod>2020-01-22</lastmod>
   </url>  <url>
-    <loc>https://linuz.me/2019/08/26/Primal-desires/</loc>
-    <lastmod>2019-08-26</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/08/04/Webug-docker/</loc>
-    <lastmod>2019-08-20</lastmod>
-  </url>  <url>
     <loc>https://linuz.me/2019/07/24/Docker-portainer/</loc>
     <lastmod>2019-08-03</lastmod>
   </url>  <url>
@@ -35,9 +41,6 @@
     <lastmod>2019-08-03</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/07/23/Docker-3/</loc>
-    <lastmod>2019-08-03</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
     <lastmod>2019-08-03</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/07/20/Docker-1/</loc>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://linuz.me/"/>
-  <updated>2020-06-30T08:30:00.798Z</updated>
+  <updated>2020-08-30T02:14:55.824Z</updated>
   <id>https://linuz.me/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>八月，CTF练习-Web</title>
+    <link href="https://linuz.me/2020/08/30/CTF-August-Practice-Web/"/>
+    <id>https://linuz.me/2020/08/30/CTF-August-Practice-Web/</id>
+    <published>2020-08-29T16:00:00.000Z</published>
+    <updated>2020-08-30T02:14:55.824Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;2020-7-10-2020-8-30&quot;&gt;&lt;a href=&quot;#2020-7-10-2020-8-30&quot; class=&quot;headerlink&quot; title=&quot;2020/7/10-2020/8/30&quot;&gt;&lt;/a&gt;2020/7/10-2020/8/30&lt;/h1&gt;&lt;h1
+        
+      
+    
+    </summary>
+    
+      <category term="CTF" scheme="https://linuz.me/categories/CTF/"/>
+    
+    
+      <category term="CTF" scheme="https://linuz.me/tags/CTF/"/>
+    
+  </entry>
   
   <entry>
     <title>PCCTF热身赛—溯源&amp;社工类题目解析</title>
@@ -174,7 +200,7 @@
     <link href="https://linuz.me/2019/08/26/Primal-desires/"/>
     <id>https://linuz.me/2019/08/26/Primal-desires/</id>
     <published>2019-08-25T16:00:00.000Z</published>
-    <updated>2019-08-26T13:27:09.794Z</updated>
+    <updated>2020-08-30T01:40:49.969Z</updated>
     
     <summary type="html">
     
@@ -226,7 +252,7 @@
     <link href="https://linuz.me/2019/08/04/Webug-docker/"/>
     <id>https://linuz.me/2019/08/04/Webug-docker/</id>
     <published>2019-08-03T16:00:00.000Z</published>
-    <updated>2019-08-20T12:55:07.332Z</updated>
+    <updated>2020-08-30T06:15:28.639Z</updated>
     
     <summary type="html">
     
@@ -438,7 +464,7 @@
     <link href="https://linuz.me/2019/06/19/Install-ctfd/"/>
     <id>https://linuz.me/2019/06/19/Install-ctfd/</id>
     <published>2019-06-18T16:00:00.000Z</published>
-    <updated>2019-08-03T01:23:38.474Z</updated>
+    <updated>2020-08-30T01:45:56.714Z</updated>
     
     <summary type="html">
     
@@ -446,7 +472,7 @@
       
         
         
-          &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot;
+          &lt;h1 id=&quot;注意&quot;&gt;&lt;a href=&quot;#注意&quot; class=&quot;headerlink&quot;
         
       
     
