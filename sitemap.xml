@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://linuz.me/2020/04/05/360-zhongce/</loc>
+    
+    <lastmod>2020-09-04T05:17:40.664Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/gallery/index.html</loc>
+    
+    <lastmod>2020-09-04T05:13:31.590Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://linuz.me/2020/08/30/CTF-August-Practice-Web/</loc>
     
     <lastmod>2020-08-30T12:30:44.233Z</lastmod>
@@ -82,13 +96,6 @@
     <loc>https://linuz.me/2019/08/04/Webug-docker/</loc>
     
     <lastmod>2020-08-30T06:15:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/gallery/index.html</loc>
-    
-    <lastmod>2020-08-30T06:12:42.152Z</lastmod>
     
   </url>
   
