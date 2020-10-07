@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Regeorg + Proxychains 实现内网转发</title>
+      <link href="/2020/10/07/Regeorg-Proxychains/"/>
+      <url>/2020/10/07/Regeorg-Proxychains/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Regeorg-Proxychains-实现内网转发"><a href="#Regeorg-Proxychains-实现内网转发" class="headerlink" title="Regeorg + Proxychains 实现内网转发"></a>Regeorg + Proxychains 实现内网转发</h1><h2 id="Regeorg"><a href="#Regeorg" class="headerlink" title="Regeorg"></a>Regeorg</h2><p>项目地址：</p><blockquote><p><a href="https://github.com/sensepost/reGeorg" target="_blank" rel="noopener">https://github.com/sensepost/reGeorg</a></p></blockquote><h3 id="食用方法"><a href="#食用方法" class="headerlink" title="食用方法"></a>食用方法</h3><p>将对应的文件上传至目标机器，并且满足能够被解析的条件。</p><p>例如：</p><p>Linux下需要将<code>tunnel.nosocket.php</code>文件传到网站根目录下。</p><p>注意<code>tunnel.php</code>适用于Windows下的PHP环境。</p><p>成功解析的效果如下图。</p><p><img src="/img/2020/10/07/0c0d6dd6-b45e-4fb8-8ce0-60e77ce5af49.png" alt></p><p>此时需要执行<code>reGeorgSocksProxy.py</code>文件启动代理模式。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python reGeorgSocksProxy.py http://192.168.*.136/tunnel.php -l 0.0.0.0 -p 1080</span><br></pre></td></tr></table></figure><p>修改<code>/etc/proxychains.conf</code>文件。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socks5 127.0.0.1 1080</span><br></pre></td></tr></table></figure><h2 id="Proxychains"><a href="#Proxychains" class="headerlink" title="Proxychains"></a>Proxychains</h2><h3 id="食用方法-1"><a href="#食用方法-1" class="headerlink" title="食用方法"></a>食用方法</h3><h4 id="Regeorg结合proxychains进行nmap扫描"><a href="#Regeorg结合proxychains进行nmap扫描" class="headerlink" title="Regeorg结合proxychains进行nmap扫描"></a>Regeorg结合proxychains进行nmap扫描</h4><p>这里需要注意，由于<code>socks</code>协议不支持icmp协议，所以不能使用ping等命令，nmap也需要加上<code>-Pn -sT</code>参数，即使用TCP协议进行扫描。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nmap -Pn -sT -p 80 192.168.*.1/24</span><br><span class="line">nmap -Pn -sT 192.168.*.204</span><br></pre></td></tr></table></figure><p><img src="/img/2020/10/07/dc94ad24-d654-4243-9019-7a01bcda8d4f.png" alt></p><h4 id="Regeorg结合proxychains开启firefox"><a href="#Regeorg结合proxychains开启firefox" class="headerlink" title="Regeorg结合proxychains开启firefox"></a>Regeorg结合proxychains开启firefox</h4><p>可以访问内网地址的web服务。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains firefox</span><br></pre></td></tr></table></figure><p><img src="/img/2020/10/07/1601a294-90dd-4165-abda-a3b8af5a4561.png" alt></p><h4 id="Regeorg结合proxychains使用Metasploit"><a href="#Regeorg结合proxychains使用Metasploit" class="headerlink" title="Regeorg结合proxychains使用Metasploit"></a>Regeorg结合proxychains使用Metasploit</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains msfconsole</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 内网渗透 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 内网渗透 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>EDUSRC-漏洞挖掘案例（一）</title>
       <link href="/2020/09/25/Edusrc-Vulnerability-mining-1/"/>
       <url>/2020/09/25/Edusrc-Vulnerability-mining-1/</url>

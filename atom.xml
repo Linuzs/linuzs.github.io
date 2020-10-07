@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://linuz.me/"/>
-  <updated>2020-09-25T09:07:31.332Z</updated>
+  <updated>2020-10-07T13:47:38.945Z</updated>
   <id>https://linuz.me/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Regeorg + Proxychains 实现内网转发</title>
+    <link href="https://linuz.me/2020/10/07/Regeorg-Proxychains/"/>
+    <id>https://linuz.me/2020/10/07/Regeorg-Proxychains/</id>
+    <published>2020-10-06T16:00:00.000Z</published>
+    <updated>2020-10-07T13:47:38.945Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Regeorg-Proxychains-实现内网转发&quot;&gt;&lt;a href=&quot;#Regeorg-Proxychains-实现内网转发&quot; class=&quot;headerlink&quot; title=&quot;Regeorg + Proxychains
+        
+      
+    
+    </summary>
+    
+      <category term="内网渗透" scheme="https://linuz.me/categories/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/"/>
+    
+    
+      <category term="内网渗透" scheme="https://linuz.me/tags/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>EDUSRC-漏洞挖掘案例（一）</title>
