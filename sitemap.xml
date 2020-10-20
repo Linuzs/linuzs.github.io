@@ -2,23 +2,121 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://linuz.me/2020/10/07/Regeorg-Proxychains/</loc>
+    <loc>https://linuz.me/about/index.html</loc>
     
-    <lastmod>2020-10-07T13:47:38.945Z</lastmod>
+    <lastmod>2020-10-20T11:28:08.170Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://linuz.me/2020/09/25/Edusrc-Vulnerability-mining-1/</loc>
+    <loc>https://linuz.me/2020/08/30/CTF-August-Practice-Web/</loc>
     
-    <lastmod>2020-09-25T09:07:31.332Z</lastmod>
+    <lastmod>2020-10-20T11:12:40.723Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/08/04/Webug-docker/</loc>
+    
+    <lastmod>2020-10-20T11:11:01.280Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/06/21/Simple-reverse/</loc>
+    
+    <lastmod>2020-10-20T11:09:05.018Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2020/10/07/Regeorg-Proxychains/</loc>
+    
+    <lastmod>2020-10-20T11:08:52.337Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/08/12/Redis-windows-getshell/</loc>
+    
+    <lastmod>2020-10-20T11:08:34.224Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/08/26/Primal-desires/</loc>
+    
+    <lastmod>2020-10-20T11:07:43.833Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2020/01/05/pikachu/</loc>
+    
+    <lastmod>2020-10-20T11:06:50.123Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/07/08/Phishing-site/</loc>
+    
+    <lastmod>2020-10-20T11:06:10.090Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2020/01/22/LKWA/</loc>
+    
+    <lastmod>2020-10-20T11:05:55.802Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
+    
+    <lastmod>2020-10-20T11:04:29.517Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2020/09/25/Edusrc-Vulnerability-1/</loc>
+    
+    <lastmod>2020-10-20T11:04:13.803Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2020/06/10/CVE-2020-7245/</loc>
+    
+    <lastmod>2020-10-20T11:03:59.972Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/09/12/CanHackMe/</loc>
+    
+    <lastmod>2020-10-20T11:03:32.587Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2019/08/31/Arbitrary-file-download/</loc>
+    
+    <lastmod>2020-10-20T11:03:13.586Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://linuz.me/2020/06/30/2020-PCCTF-Writeup/</loc>
+    
+    <lastmod>2020-10-20T11:02:58.067Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://linuz.me/2020/04/05/360-zhongce/</loc>
     
-    <lastmod>2020-09-04T05:17:40.664Z</lastmod>
+    <lastmod>2020-10-20T11:02:34.106Z</lastmod>
     
   </url>
   
@@ -26,104 +124,6 @@
     <loc>https://linuz.me/gallery/index.html</loc>
     
     <lastmod>2020-09-04T05:13:31.590Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2020/08/30/CTF-August-Practice-Web/</loc>
-    
-    <lastmod>2020-08-30T12:30:44.233Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
-    
-    <lastmod>2020-08-30T12:17:32.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2020/06/30/2020-PCCTF-Writeup/</loc>
-    
-    <lastmod>2020-08-30T12:14:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2020/06/10/CVE-2020-7245/</loc>
-    
-    <lastmod>2020-08-30T12:12:24.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2019/09/12/CanHackMe/</loc>
-    
-    <lastmod>2020-08-30T12:11:38.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2020/01/22/LKWA/</loc>
-    
-    <lastmod>2020-08-30T12:09:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2019/08/12/Redis-windows-getshell/</loc>
-    
-    <lastmod>2020-08-30T12:06:38.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2019/08/31/Arbitrary-file-download/</loc>
-    
-    <lastmod>2020-08-30T12:04:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2020/01/05/pikachu/</loc>
-    
-    <lastmod>2020-08-30T12:03:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2019/06/21/Simple-reverse/</loc>
-    
-    <lastmod>2020-08-30T12:02:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2019/07/08/Phishing-site/</loc>
-    
-    <lastmod>2020-08-30T12:01:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2019/08/04/Webug-docker/</loc>
-    
-    <lastmod>2020-08-30T06:15:28.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/about/index.html</loc>
-    
-    <lastmod>2020-08-30T06:09:30.167Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://linuz.me/2019/08/26/Primal-desires/</loc>
-    
-    <lastmod>2020-08-30T01:40:48.000Z</lastmod>
     
   </url>
   

@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://linuz.me/2020/10/07/Regeorg-Proxychains/</loc>
-    <lastmod>2020-10-07</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2020/09/25/Edusrc-Vulnerability-mining-1/</loc>
-    <lastmod>2020-09-25</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2020/04/05/360-zhongce/</loc>
-    <lastmod>2020-09-04</lastmod>
-  </url>  <url>
     <loc>https://linuz.me/2020/08/30/CTF-August-Practice-Web/</loc>
-    <lastmod>2020-08-30</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
-    <lastmod>2020-08-30</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2020/06/30/2020-PCCTF-Writeup/</loc>
-    <lastmod>2020-08-30</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2020/06/10/CVE-2020-7245/</loc>
-    <lastmod>2020-08-30</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/09/12/CanHackMe/</loc>
-    <lastmod>2020-08-30</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2020/01/22/LKWA/</loc>
-    <lastmod>2020-08-30</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/08/12/Redis-windows-getshell/</loc>
-    <lastmod>2020-08-30</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/08/31/Arbitrary-file-download/</loc>
-    <lastmod>2020-08-30</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2020/01/05/pikachu/</loc>
-    <lastmod>2020-08-30</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/06/21/Simple-reverse/</loc>
-    <lastmod>2020-08-30</lastmod>
-  </url>  <url>
-    <loc>https://linuz.me/2019/07/08/Phishing-site/</loc>
-    <lastmod>2020-08-30</lastmod>
+    <lastmod>2020-10-20</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/08/04/Webug-docker/</loc>
-    <lastmod>2020-08-30</lastmod>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/06/21/Simple-reverse/</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2020/10/07/Regeorg-Proxychains/</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/08/12/Redis-windows-getshell/</loc>
+    <lastmod>2020-10-20</lastmod>
   </url>  <url>
     <loc>https://linuz.me/2019/08/26/Primal-desires/</loc>
-    <lastmod>2020-08-30</lastmod>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2020/01/05/pikachu/</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/07/08/Phishing-site/</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2020/01/22/LKWA/</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/06/19/Install-ctfd/</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2020/09/25/Edusrc-Vulnerability-1/</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2020/06/10/CVE-2020-7245/</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/09/12/CanHackMe/</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2019/08/31/Arbitrary-file-download/</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2020/06/30/2020-PCCTF-Writeup/</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://linuz.me/2020/04/05/360-zhongce/</loc>
+    <lastmod>2020-10-20</lastmod>
   </url>
 </urlset>
