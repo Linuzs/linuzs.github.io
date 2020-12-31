@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://linuz.me/"/>
-  <updated>2020-11-06T03:00:46.000Z</updated>
+  <updated>2020-12-31T12:58:00.253Z</updated>
   <id>https://linuz.me/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2020年终总结</title>
+    <link href="https://linuz.me/2020/12/31/2020-Year-end-summary/"/>
+    <id>https://linuz.me/2020/12/31/2020-Year-end-summary/</id>
+    <published>2020-12-30T16:00:00.000Z</published>
+    <updated>2020-12-31T12:58:00.253Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;2020年终总结&quot;&gt;&lt;a href=&quot;#2020年终总结&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://linuz.me/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="新年" scheme="https://linuz.me/tags/%E6%96%B0%E5%B9%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>2020-湖湘杯-复赛-部分Writeup</title>
